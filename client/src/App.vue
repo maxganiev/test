@@ -1,4 +1,5 @@
 <script>
+import lion from '../public/assets/lion.jpg?url'
 export default {
   setup() {
     return {};
@@ -18,7 +19,7 @@ export default {
   methods: {
     async getPic() {
       const req = await fetch(
-        "/assets/45-453988_mountain-lion-wallpapers-4k.jpg"
+        lion
       );
       const res = await req.blob();
       this.ready = true;
